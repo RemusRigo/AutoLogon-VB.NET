@@ -12,6 +12,11 @@
   </PropertyGroup>
 
    <ItemGroup>
+     <None Remove=".gitattributes" />
+     <None Remove=".gitignore" />
+     <None Remove="FUNDING.yml" />
+     <None Remove="Publish x64.bat" />
+     <None Remove="Publish x86.bat" />
      <None Remove="Update.bat" />
      <None Remove="Upload.bat" />
      <None Remove="Upload.ps1" />

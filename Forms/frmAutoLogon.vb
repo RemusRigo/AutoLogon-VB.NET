@@ -12,19 +12,10 @@ Public Class frmAutoLogon
 
    '-----------------------------------------------------------------------------------------------
    ' Add About menu item to system menu
-   <DllImport("user32.dll")>
-   Private Shared Function GetSystemMenu(hWnd As IntPtr, bRevert As Boolean) As IntPtr
-   End Function
 
-   <DllImport("user32.dll")>
-   Private Shared Function AppendMenu(hMenu As IntPtr, uFlags As UInteger, uIDNewItem As UInteger, lpNewItem As String) As Boolean
-   End Function
 
-   ' Menu flags
-   Private Const MF_SEPARATOR As UInteger = &H800
-   Private Const MF_STRING As UInteger = &H0
    ' Custom menu item IDs (must be between 1 and &HF000 to avoid conflicts)
-   Private Const WM_SYSCOMMAND As Integer = &H112
+
    Private Const SYSMENU_ABOUT_ID As UInteger = 1000
 
    Protected Overrides Sub OnHandleCreated(e As EventArgs)
