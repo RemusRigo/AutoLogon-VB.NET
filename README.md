@@ -2,18 +2,20 @@
 
 A Windows AutoLogon utility
 
-
+## 
 
 ## Authors
 
 * [@remusrigo](https://github.com/RemusRigo)
 * [@remusrigo](https://sourceforge.net/u/remusrigo/profile)
 
+## 
+
 ## Installation
 
 You must install .NET Runtime 10 x64 and then just run AutoLogon.exe
 
-
+## 
 
 ## Features
 
@@ -24,15 +26,19 @@ You must install .NET Runtime 10 x64 and then just run AutoLogon.exe
 * Click on Password label to show/hide password
 * Right-Click on Caption to show About dialog box
 
+## 
+
 ## Roadmap
 
+* 2026-04-29: Fix: changed the behavior of the radio buttons (Local/MS Account/Domain accounts)
+* 2026-04-29: Fix: revised logic in several areas
 * 2026-04-25: Fix: logic in check if AutoLogon is enabled (also changed from RadioButton to CheckBox)
 * 2026-03-30: Add: click on Password label to show/hide password
-* 2026-03-30: Added manifest file / always run as administrator
-* 2026-03-30: Added About dialog box
-* 2026-03-30: Changed interface
-* 2026-03-28: Tested autologin for Microsoft Accounts
-* 2026-03-28: Tested autologin for local users
+* 2026-03-30: Add: Manifest file / always run as administrator
+* 2026-03-30: Add: About dialog box
+* 2026-03-30: New: Changed interface
+* 2026-03-28: Test: autologin for Microsoft Accounts
+* 2026-03-28: Test: autologin for local users
 * 2026-03-26: ICO: easypass by Papirus Development Team https://icon-icons.com/icon/easypass/94927
 * 2026-03-25: Project started
 
