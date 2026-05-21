@@ -2,20 +2,20 @@
 
 A Windows AutoLogon utility
 
-## 
+
 
 ## Authors
 
 * [@remusrigo](https://github.com/RemusRigo)
 * [@remusrigo](https://sourceforge.net/u/remusrigo/profile)
 
-## 
+
 
 ## Installation
 
 You must install .NET Runtime 10 x64 and then just run AutoLogon.exe
 
-## 
+
 
 ## Features
 
@@ -26,7 +26,13 @@ You must install .NET Runtime 10 x64 and then just run AutoLogon.exe
 * Click on Password label to show/hide password
 * Right-Click on Caption to show About dialog box
 
-## 
+
+
+## Statistics
+
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RemusRigo/AutoLogon-VBNET/total)
+
+
 
 ## Roadmap
 
@@ -41,6 +47,4 @@ You must install .NET Runtime 10 x64 and then just run AutoLogon.exe
 * 2026-03-28: Test: autologin for local users
 * 2026-03-26: ICO: easypass by Papirus Development Team https://icon-icons.com/icon/easypass/94927
 * 2026-03-25: Project started
-
-## 
 
