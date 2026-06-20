@@ -41,7 +41,7 @@ Domain Account:<br> ![Domain Account](Screenshots/domain.png)
 
 ## Statistics
 
-!\[GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RemusRigo/AutoLogon-VBNET/total)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RemusRigo/AutoLogon-VBNET/total)
 
 
 
