@@ -32,6 +32,8 @@ See the [User's Guide](UsersGuide.md) for downloads, runtimes, installation and 
 ## Statistics
 
 ![VB.NET](https://img.shields.io/badge/Language-VB.NET-blue)
+![API](https://img.shields.io/badge/API-.AdvAPI32-lightblue)
+![API](https://img.shields.io/badge/API-.User32-lightblue)
 ![.NET3.5](https://img.shields.io/badge/Runtime-.NET%203.5-lightblue)
 ![.NET4.8](https://img.shields.io/badge/Runtime-.NET%204.8-lightblue)
 ![.NET8.0](https://img.shields.io/badge/Runtime-.NET%208.0-lightblue)
