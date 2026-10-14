@@ -1,47 +1,40 @@
 # AutoLogon
-
-A Windows AutoLogon utility
-
+AutoLogon: a Windows AutoLogon utility
 
 
-## Authors
+
+## Author
 
 * [@remusrigo](https://github.com/RemusRigo)
 * [@remusrigo](https://sourceforge.net/u/remusrigo/profile)
 
 
 
-## Installation
-
-You must install .NET Runtime 10 and then just run AutoLogon.exe (x64 \& x86)
-
-
-
-## Instructions
-
-Local Account:<br> ![Local Account](Screenshots/local.png)
-
-Microsoft Account:<br> ![Microsoft Account](Screenshots/microsoft.png)
-
-Domain Account:<br> ![Domain Account](Screenshots/domain.png)
-
-
-
 ## Features
 
-* Require admin rights
-* Auto logon for local users
-* Auto logon for Microsoft Accounts
-* Auto logon for domain users
-* Click on Password label to show/hide password
-* Right-Click on Caption to show About dialog box
-* Adaptive Layout
-* Multi target: 3.5, 4.8, 8.0, 10.0
+* Enable/disable Windows AutoLogon
+* Auto logon for local users, Microsoft Accounts and domain users
+* The password is stored as an LSA secret (not as plain text in the registry)
+* Read / Set / Delete the AutoLogon settings
+* Click on the Password label to show/hide the password
+* Adaptive layout (show/hide options & form size changes)
+* Runs as administrator (manifest)
+* Multi target: .NET Framework 3.5 (Windows XP), 4.8, .NET 8.0, 10.0
+
+
+
+## User's Guide
+
+See the [User's Guide](UsersGuide.md) for downloads, runtimes, installation and usage.
+
 
 
 ## Statistics
 
-![status](https://img.shields.io/badge/status-completed-brightgreen)<br>
+![VB.NET](https://img.shields.io/badge/Language-VB.NET-512BD4?labelColor=555555)
+![VS](https://img.shields.io/badge/IDE-Visual%20Studio-5C2D91?labelColor=555555)
+<br>
+![status](https://img.shields.io/badge/status-completed-brightgreen) 
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RemusRigo/AutoLogon-VB.NET/total)
 
 
@@ -60,6 +53,5 @@ Domain Account:<br> ![Domain Account](Screenshots/domain.png)
 * 2026-03-30: New: Changed interface
 * 2026-03-28: Test: autologin for Microsoft Accounts
 * 2026-03-28: Test: autologin for local users
-* 2026-03-26: ICO: easypass by Papirus Development Team https://icon-icons.com/icon/easypass/94927
+* 2026-03-26: ICO: [easypass](https://icon-icons.com/icon/easypass/94927) by Papirus Development Team
 * 2026-03-25: Project started
-
