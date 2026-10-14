@@ -31,8 +31,9 @@ See the [User's Guide](UsersGuide.md) for downloads, runtimes, installation and 
 
 ## Statistics
 
-![VB.NET](https://img.shields.io/badge/Language-VB.NET-512BD4?labelColor=555555)
-![VS](https://img.shields.io/badge/IDE-Visual%20Studio-5C2D91?labelColor=555555)
+![VB.NET](https://img.shields.io/badge/Language-VB.NET-blue)
+![.NET](https://img.shields.io/badge/Framework-.NET%203.5-blue)
+![VS](https://img.shields.io/badge/IDE-Visual%20Studio-purple)
 <br>
 ![status](https://img.shields.io/badge/status-completed-brightgreen) 
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RemusRigo/AutoLogon-VB.NET/total)
