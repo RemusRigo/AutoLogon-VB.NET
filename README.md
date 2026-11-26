@@ -1,5 +1,5 @@
 # AutoLogon
-AutoLogon: a Windows AutoLogon utility
+A Windows AutoLogon utility
 
 
 
