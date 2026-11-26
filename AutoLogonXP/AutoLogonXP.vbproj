@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -20,7 +20,7 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>..\bin\Debug\net35\x86\</OutputPath>
+    <OutputPath>..\bin\Debug\net35 x86\</OutputPath>
     <DocumentationFile>AutoLogonXP.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
@@ -30,7 +30,7 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>..\bin\Debug\net35\x64\</OutputPath>
+    <OutputPath>..\bin\Debug\net35 x64\</OutputPath>
     <DocumentationFile>AutoLogonXP.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
@@ -40,7 +40,7 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\net35\x86\</OutputPath>
+    <OutputPath>..\bin\Release\net35 x86\</OutputPath>
     <DocumentationFile>AutoLogonXP.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
@@ -50,7 +50,7 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>..\bin\Release\net35\x64\</OutputPath>
+    <OutputPath>..\bin\Release\net35 x64\</OutputPath>
     <DocumentationFile>AutoLogonXP.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
@@ -67,7 +67,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>com_94927.ico</ApplicationIcon>
+    <ApplicationIcon>Res\Main.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\AdvAPI32.vb" />
+    <Compile Include="API\Messages.vb" />
     <Compile Include="API\user32.vb" />
     <Compile Include="Forms\frmAbout.Designer.vb">
       <DependentUpon>frmAbout.vb</DependentUpon>
@@ -156,7 +157,7 @@
     <Folder Include="Res\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="com_94927.ico" />
+    <Content Include="Res\Main.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

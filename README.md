@@ -3,14 +3,14 @@ AutoLogon: a Windows AutoLogon utility
 
 
 
-## Author
+## 👤 Author
 
 * [@remusrigo](https://github.com/RemusRigo)
 * [@remusrigo](https://sourceforge.net/u/remusrigo/profile)
 
 
 
-## Features
+## ✨ Features
 
 * Enable/disable Windows AutoLogon
 * Auto logon for local users, Microsoft Accounts and domain users
@@ -19,34 +19,38 @@ AutoLogon: a Windows AutoLogon utility
 * Click on the Password label to show/hide the password
 * Adaptive layout (show/hide options & form size changes)
 * Runs as administrator (manifest)
-* Multi target: .NET Framework 3.5 (Windows XP), 4.8, .NET 8.0, 10.0
 
 
 
-## User's Guide
+## ⚙️ User's Guide
 
 See the [User's Guide](UsersGuide.md) for downloads, runtimes, installation and usage.
 
 
 
-## Statistics
+## 🛠️ Statistics
 
 ![VB.NET](https://img.shields.io/badge/Language-VB.NET-blue)
+<br>
 ![API](https://img.shields.io/badge/API-AdvAPI32-lightblue)
 ![API](https://img.shields.io/badge/API-User32-lightblue)
+<br>
 ![.NET3.5](https://img.shields.io/badge/Runtime-.NET%203.5-lightblue)
 ![.NET4.8](https://img.shields.io/badge/Runtime-.NET%204.8-lightblue)
 ![.NET8.0](https://img.shields.io/badge/Runtime-.NET%208.0-lightblue)
 ![.NET10.0](https://img.shields.io/badge/Runtime-.NET%2010.0-lightblue)
+<br>
 ![VS](https://img.shields.io/badge/IDE-Visual%20Studio-purple)
 <br>
 ![status](https://img.shields.io/badge/status-completed-brightgreen) 
+<br>
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/RemusRigo/AutoLogon-VB.NET/total)
 
 
 
-## Roadmap
+## 🗺️ Roadmap
 
+* 2026-11-26: Fix: Build.bat builds the .NET 3.5 project with Visual Studio's MSBuild
 * 2026-06-20: Add: Multi targets: Separate project for .NET 3.5
 * 2026-06-19: Add: Multi targets: .NET 4.8, 8.0, 10.0
 * 2026-06-18: Add: Adaptive layout (show/hide options \& form size changes)

@@ -6,7 +6,7 @@
 
 Imports Microsoft.Win32
 Imports System.Runtime.InteropServices
-Imports System.Security.Principal
+Imports AutoLogonXP.API
 
 Public Class frmAutoLogon
 

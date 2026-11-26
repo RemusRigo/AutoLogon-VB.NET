@@ -10,10 +10,10 @@ Each release contains one folder per framework and architecture:
 
 |Folder|Target Framework|Architecture|Required Runtime|
 |-|-|-|-|
-|`net35\x64`, `net35\x86`|.NET Framework 3.5|64/32-bit|[.NET Framework 3.5](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) (Windows XP and later)|
-|`net48\x64`, `net48\x86`|.NET Framework 4.8|64/32-bit|[.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) (included in Windows 10/11)|
-|`net8.0-windows\x64`, `\x86`|.NET 8.0|64/32-bit|[.NET 8.0 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)|
-|`net10.0-windows\x64`, `\x86`|.NET 10.0|64/32-bit|[.NET 10.0 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)|
+|`net35 x64`, `net35 x86`|.NET Framework 3.5|64/32-bit|[.NET Framework 3.5](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) (Windows XP and later)|
+|`net48 x64`, `net48 x86`|.NET Framework 4.8|64/32-bit|[.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) (included in Windows 10/11)|
+|`net8.0 x64`, `net8.0 x86`|.NET 8.0|64/32-bit|[.NET 8.0 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)|
+|`net10.0 x64`, `net10.0 x86`|.NET 10.0|64/32-bit|[.NET 10.0 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)|
 
 > **Which one do I need?** On Windows 10/11, the **net48** build runs without installing anything.
 > On 64-bit Windows use **x64**. Use **net35** (`AutoLogonXP.exe`) only on Windows XP.

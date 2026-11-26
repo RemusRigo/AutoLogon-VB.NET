@@ -23,7 +23,6 @@ Partial Class frmAutoLogon
    <System.Diagnostics.DebuggerStepThrough()>
    Private Sub InitializeComponent()
       components = New ComponentModel.Container()
-      Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAutoLogon))
       grpBoxAutoLoginSettings = New GroupBox()
       grpBoxAutoLoginType = New GroupBox()
       rBtnDomain = New RadioButton()
@@ -222,7 +221,6 @@ Partial Class frmAutoLogon
       Controls.Add(chkBoxAutologon)
       Controls.Add(grpBoxAutoLoginSettings)
       FormBorderStyle = FormBorderStyle.FixedSingle
-      Icon = CType(resources.GetObject("$this.Icon"), Icon)
       MaximizeBox = False
       MinimizeBox = False
       Name = "frmAutoLogon"

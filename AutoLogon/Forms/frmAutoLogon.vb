@@ -1,12 +1,12 @@
 ﻿'--------------------------------------------------------------------------------------------------
 ' AutoLogon
 '    © 2026 Remus Rigo
-'       v1.1 2026-03-30
+'       v1.1.20261126
 '--------------------------------------------------------------------------------------------------
 
 Imports Microsoft.Win32
 Imports System.Runtime.InteropServices
-Imports System.Security.Principal
+Imports AutoLogon.API
 
 Public Class frmAutoLogon
 
@@ -105,6 +105,7 @@ Public Class frmAutoLogon
    '-----------------------------------------------------------------------------------------------
    ' frmAutoLogon onLoad
    Private Sub frmAutoLogon_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+      Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)   ' exe icon (Res\Main.ico), avoids a binary resource in the .resx
       Me.Text = appTitle
 
       'check if AutoLogon is enabled

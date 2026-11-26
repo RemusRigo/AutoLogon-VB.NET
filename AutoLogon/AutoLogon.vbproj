@@ -1,72 +1,38 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-   <PropertyGroup>    
-      <ApplicationIcon>Res\com_94927.ico</ApplicationIcon>
-      <ApplicationManifest>app.manifest</ApplicationManifest>
-      <MyType>WindowsForms</MyType>
-      <OutputType>WinExe</OutputType>
-      <StartupObject>Sub Main</StartupObject>
-      <UseWindowsForms>true</UseWindowsForms>
-      <TargetFrameworks>net48;net8.0-windows;net10.0-windows</TargetFrameworks>
-      <Platforms>x64;x86</Platforms>
-  </PropertyGroup>
+<PropertyGroup>    
+   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   <ApplicationIcon>Res\Main.ico</ApplicationIcon>
+   <ApplicationManifest>app.manifest</ApplicationManifest>
+   <AssemblyName>AutoLogon</AssemblyName>
+   <MyType>WindowsForms</MyType>
+   <OutputType>WinExe</OutputType>
+   <Platforms>x64;x86</Platforms>
+   <RootNamespace>AutoLogon</RootNamespace>
+   <StartupObject>Sub Main</StartupObject>
+   <TargetFrameworks>net48;net8.0-windows;net10.0-windows</TargetFrameworks>
+   <TargetFrameworks Condition="'$(BuildingInsideVisualStudio)' == 'true'">net10.0-windows</TargetFrameworks>
+   <UseWindowsForms>true</UseWindowsForms>
+</PropertyGroup>
 
-   <PropertyGroup>
-      <BaseOutputPath>..\bin\</BaseOutputPath>
-      <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
-      <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-   </PropertyGroup>
+<PropertyGroup Condition="'$(TargetFramework)' != ''">
+   <TfmName>$(TargetFramework.Replace('-windows', ''))</TfmName>
+   <OutputPath>..\bin\$(Configuration)\$(TfmName) $(Platform)\</OutputPath>
+   <IntermediateOutputPath>obj\$(Configuration)\$(TfmName) $(Platform)\</IntermediateOutputPath>
+</PropertyGroup>
 
-   <PropertyGroup Condition="'$(TargetFramework)'=='net48' AND '$(Configuration)|$(Platform)'=='Debug|x86'">
-      <OutputPath>..\bin\Debug\net48\x86\</OutputPath>
-      <IntermediateOutputPath>obj\Debug\net48\x86\</IntermediateOutputPath>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(TargetFramework)'=='net48' AND '$(Configuration)|$(Platform)'=='Debug|x64'">
-      <OutputPath>..\bin\Debug\net48\x64\</OutputPath>
-      <IntermediateOutputPath>obj\Debug\net48\x64\</IntermediateOutputPath>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(TargetFramework)'=='net48' AND '$(Configuration)|$(Platform)'=='Release|x86'">
-      <OutputPath>..\bin\Release\net48\x86\</OutputPath>
-      <IntermediateOutputPath>obj\Release\net48\x86\</IntermediateOutputPath>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(TargetFramework)'=='net48' AND '$(Configuration)|$(Platform)'=='Release|x64'">
-      <OutputPath>..\bin\Release\net48\x64\</OutputPath>
-      <IntermediateOutputPath>obj\Release\net48\x64\</IntermediateOutputPath>
-   </PropertyGroup>
-
-   <PropertyGroup Condition="'$(TargetFramework)'=='net8.0-windows' AND '$(Configuration)|$(Platform)'=='Debug|x86'">
-      <OutputPath>..\bin\Debug\net8.0-windows\x86\</OutputPath>
-      <IntermediateOutputPath>obj\Debug\net8.0-windows\x86\</IntermediateOutputPath>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(TargetFramework)'=='net8.0-windows' AND '$(Configuration)|$(Platform)'=='Debug|x64'">
-      <OutputPath>..\bin\Debug\net8.0-windows\x64\</OutputPath>
-      <IntermediateOutputPath>obj\Debug\net8.0-windows\x64\</IntermediateOutputPath>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(TargetFramework)'=='net8.0-windows' AND '$(Configuration)|$(Platform)'=='Release|x86'">
-      <OutputPath>..\bin\Release\net8.0-windows\x86\</OutputPath>
-      <IntermediateOutputPath>obj\Release\net8.0-windows\x86\</IntermediateOutputPath>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(TargetFramework)'=='net8.0-windows' AND '$(Configuration)|$(Platform)'=='Release|x64'">
-      <OutputPath>..\bin\Release\net8.0-windows\x64\</OutputPath>
-      <IntermediateOutputPath>obj\Release\net8.0-windows\x64\</IntermediateOutputPath>
-   </PropertyGroup>
-
-   <PropertyGroup Condition="'$(TargetFramework)'=='net10.0-windows' AND '$(Configuration)|$(Platform)'=='Debug|x86'">
-      <OutputPath>..\bin\Debug\net10.0-windows\x86\</OutputPath>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(TargetFramework)'=='net10.0-windows' AND '$(Configuration)|$(Platform)'=='Debug|x64'">
-      <OutputPath>..\bin\Debug\net10.0-windows\x64\</OutputPath>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(TargetFramework)'=='net10.0-windows' AND '$(Configuration)|$(Platform)'=='Release|x86'">
-      <OutputPath>..\bin\Release\net10.0-windows\x86\</OutputPath>
-   </PropertyGroup>
-   <PropertyGroup Condition="'$(TargetFramework)'=='net10.0-windows' AND '$(Configuration)|$(Platform)'=='Release|x64'">
-      <OutputPath>..\bin\Release\net10.0-windows\x64\</OutputPath>
-   </PropertyGroup>
+<PropertyGroup Condition="'$(Platform)' == 'x86' Or '$(Platform)' == 'x64'">
+   <PlatformTarget>$(Platform)</PlatformTarget>
+</PropertyGroup>
 
 <ItemGroup>
-    <Content Include="Res\com_94927.ico" />
-  </ItemGroup>
+   <EmbeddedResource Include="Res\PayPal.png" LogicalName="PayPal.png" />
+   <EmbeddedResource Include="Res\Revolut.png" LogicalName="Revolut.png" />
+</ItemGroup>
+
+<ItemGroup>
+   <Content Include="Res\Main.ico" />
+</ItemGroup>
 
   <ItemGroup>
     <Import Include="System.Data" />
@@ -87,17 +53,6 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
    </None>
-</ItemGroup>
-
-<ItemGroup>
-   <None Remove=".gitattributes" />
-   <None Remove=".gitignore" />
-   <None Remove="desktop.ini" />
-   <None Remove="FUNDING.yml" />
-   <None Remove="Publish x64.bat" />
-   <None Remove="Publish x86.bat" />
-   <None Remove="Sync.bat" />
-   <None Remove="Sync.ps1" />
 </ItemGroup>
 
 </Project>
